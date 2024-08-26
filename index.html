@@ -16,6 +16,16 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .placeholder-top::placeholder {
+        position: absolute;
+        top: 0;
+        margin-top: 1rem;
+      }
+      .bg-img {
+        background-image: url(assets/bg.jpg);
+      }
+    </style>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -27,6 +37,7 @@
     <title>Rinterio</title>
   </head>
   <body>
+    <!-- [Responsive at mobile 425px and large 1440px] -->
     <nav>
       <div
         class="container md:mx-auto px-6 flex items-center justify-between md:mt-10 mt-5"
@@ -69,7 +80,7 @@
           </div>
 
           <div
-            class="flex items-center gap-2 px-5 py-3 bg-[#ABEF5F] rounded-[32px]"
+            class="flex items-center gap-2 px-5 py-3 bg-[#ABEF5F] rounded-[32px] cursor-pointer"
           >
             <div><p class="text-xl font-bold">Book Consult</p></div>
             <div>
@@ -586,5 +597,152 @@
     </section>
 
     <!-- Unique Section End -->
+    <!-- Mail Section -->
+
+    <section class="bg-[url('assets/bg.jpg')] lg:pb-1 pb-6">
+      <div class="container md:mx-auto md:mt-10 lg:pt-10 mt-5 px-6">
+        <div class="flex justify-center py-5 lg:py-2">
+          <div
+            class="text-[#494949] bg-[rgba(171,239,95,0.5)] inline-flex rounded-full items-center px-3 py-2 lg:px-4 lg:py-2"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+            <button class="text-[1rem] ml-2 font-bold">
+              Explore our Latest works
+            </button>
+          </div>
+        </div>
+
+        <h1
+          class="font-bold lg:font-extrabold text-[24px] lg:text-[40px] text-center pb-3"
+        >
+          Let’s Discuss Next Project
+        </h1>
+
+        <p
+          class="text-center text-[14px] md:text-[16px] font-medium text-[#494949]"
+        >
+          Let’s Explore more projects and learn more about the project that will
+          be available soon.
+        </p>
+
+        <!-- Input Information Section -->
+
+        <div
+          class="grid grid-rows-8 lg:grid-cols-2 gap-6 lg:grid-rows-6 lg:my-4 mt-8 lg:py-4 lg:px-16 lg:justify-center"
+        >
+          <div class="row-span-1 lg:col-span-1 lg:row-span-1">
+            <input
+              type="text"
+              placeholder="First Name*"
+              class="input input-bordered w-full rounded-[64px]"
+            />
+          </div>
+
+          <div class="row-span-1 lg:col-span-1 lg:row-span-1">
+            <input
+              type="text"
+              placeholder="Last Name*"
+              class="input input-bordered w-full rounded-[64px]"
+            />
+          </div>
+
+          <div class="row-span-1 lg:col-span-1 lg:row-span-1">
+            <input
+              type="number"
+              placeholder="Phone Number*"
+              class="input input-bordered w-full rounded-[64px]"
+            />
+          </div>
+
+          <div class="row-span-1 lg:col-span-1 lg:row-span-1">
+            <input
+              type="email"
+              placeholder="Email Adress*"
+              class="input input-bordered w-full rounded-[64px]"
+            />
+          </div>
+
+          <div class="row-span-3 lg:col-span-2 lg:row-span-3">
+            <input
+              type="text"
+              placeholder="Write your message here"
+              class="input input-bordered w-full h-full rounded-[32px] placeholder-top"
+            />
+          </div>
+
+          <div class="row-span-1 lg:col-span-2 lg:row-span-1">
+            <div
+              class="flex items-center justify-center gap-2 px-5 py-3 bg-[#ABEF5F] rounded-[32px] cursor-pointer"
+            >
+              <div><p class="text-xl font-bold">Send Mail</p></div>
+              <div>
+                <div
+                  class="bg-black rounded-full flex items-center justify-center p-2"
+                >
+                  <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mail Section End -->
+     <!-- Footer Start -->
+
+    <section class="bg-[#1C1C1C]">
+      <div class="container md:mx-auto lg:py-20 px-6 py-10">
+        <div class="flex items-center justify-center">
+          <div
+            class="bg-[#ABEF5F] rounded-full flex items-center justify-center p-3"
+          >
+            <i class="fa-solid fa-arrow-right -rotate-45"></i>
+          </div>
+          <div class="">
+            <h1
+              class="text-[#E9E9E9] font-extrabold ml-2 tracking-wider text-3xl"
+            >
+              Rinterio
+            </h1>
+          </div>
+        </div>
+
+        <p
+          class="text-center text-[14px] md:text-[16px] font-medium text-[#737373] py-4"
+        >
+          Let’s Explore more projects and learn more about<br />the project that
+          will be available soon.
+        </p>
+
+        <div class="lg:mt-4">
+          <ul
+            class="flex flex-col md:flex-row gap-4 items-center justify-center md:gap-16 lg:text-xl text-[16px] font-medium lg:font-bold text-[#E9E9E9]"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="md:flex md:items-center md:justify-center lg:mt-5">
+          <div
+            class="flex items-center justify-center mt-4 bg-[#ABEF5F] rounded-full px-5 py-3"
+          >
+            <button class="font-bold text-xl">View Details</button>
+            <div
+              class="bg-black rounded-full flex items-center justify-center p-2 ml-2"
+            >
+              <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer End -->
   </body>
 </html>
